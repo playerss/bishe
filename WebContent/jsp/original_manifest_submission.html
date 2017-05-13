@@ -1,0 +1,287 @@
+<h2 class="contentTitle">原始舱单提交</h2>
+
+
+<div class="pageContent sortDrag" selector="h1" layoutH="42">
+	<div class="panel" minH="80" defH="80">
+		<h1>船舶及港区信息</h1>
+		<div>
+       		<table style="table-layout:fixed;" width="100%">
+       			<tr height="40">
+       				<td>
+						<label for="" style="width:45%;display:inline-block;float:left;height: 10px">船名称/船代号/航次：</label>
+							<select class="required" name="" style="width:50%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">和谐号/HXH/0013W</option>
+								<option value="2">太阳号/TYH/0014W</option>
+								<option value="3">中远号/ZYH/0015W</option>
+						</select></td>
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">承运人：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">离境地港口：</label>
+						<!-- <input type="text" id="" style="width:55%"/> -->
+						<input class="required" style="width:55%" name="field3" type="text" /></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">境外装载时间：</label>
+						<input class="required" style="width:55%" type="text" id="" onfocus="WdatePicker()"/></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">国内第一港口：</label>
+						<!-- <input type="text" id="" style="width:55%"/> -->
+						<input class="required" style="width:55%" name="field3" type="text" /></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">第一港口时间：</label>
+						<input class="required" style="width:55%" type="text" id="" onfocus="WdatePicker()"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">境外预计启运时间：</label>
+						<input class="required" style="width:55%" type="text" id="" onfocus="WdatePicker()"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left;height: 10px">运输方式：</label>
+							<select class="required" name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">海上运输</option>
+								<option value="2">内河运输</option>
+								<option value="3">空中运输</option>
+						</select></td>
+				</tr>
+       		</table>
+	</div>
+	</div>
+	<br/>
+	<div class="panel" defH="150">
+		<h1>提运单信息</h1>
+		<div>
+       		<table style="table-layout:fixed;" width="100%">
+       			<tr height="40">
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">运单号：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left;height: 10px">是否空箱：</label>
+							<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">是</option>
+								<option value="2">否</option>
+							</select></td>
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">海关货物状态：</label>
+						<input class="required" type="text" id="" style="width:55%" value="进出口货物"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">是否散货：</label>
+						<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">是</option>
+								<option value="2">否</option>
+						</select></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">运费支付方式：</label>
+						<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">到付</option>
+								<option value="2">现付</option>
+						</select></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">装货地代码：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">到达卸货地日期：</label>
+						<input class="required" style="width:55%" type="text" id="" onfocus="WdatePicker()"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">托运货物件数：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">货物总毛重：</label>
+						<input class="required" type="text" id="" style="width:45%"/><span style="width:20%">  公斤</span></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">拆箱人代码：</label>
+						<input type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">货物体积：</label>
+						<input type="text" id="" style="width:35%"/><span style="width:40%">  立方米</span></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">包装种类：</label>
+						<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">集装箱</option>
+								<option value="2">纸板箱</option>
+								<option value="3">其他</option>
+						</select></td>
+				</tr>
+				<tr height="30">
+					<td align="center">
+						<div class="button"><div class="buttonContent"><button type="submit">更多数据项</button></div></div></td>
+				</tr>
+       		</table>
+	</div>
+	</div>
+	<br/>
+	<div class="panel" minH="160" defH="160">
+		<h1>联系企业信息</h1>
+		<div>
+       		<table style="table-layout:fixed;" width="100%">
+       			<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">发货人名称：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">发货人联系方式：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td colspan="2">
+						<label for="" style="width:20%;display:inline-block;float:left">发货人联系地址：</label>
+						<input class="required" type="text" id="" style="width:77%"/></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">收货人名称：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">收货人联系方式：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td colspan="2">
+						<label for="" style="width:20%;display:inline-block;float:left">收货人联系地址：</label>
+						<input class="required" type="text" id="" style="width:77%"/></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">通知人名称：</label>
+						<input type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">通知人联系方式：</label>
+						<input type="text" id="" style="width:55%"/></td>
+					<td colspan="2">
+						<label for="" style="width:20%;display:inline-block;float:left">通知人联系地址：</label>
+						<input type="text" id="" style="width:77%"/></td>
+				</tr>
+       			<tr height="40">
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">危品联系人代码：</label>
+						<input type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">危品联系人名称：</label>
+						<input type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:45%;display:inline-block;float:left">危品联系人联系方式：</label>
+						<input type="text" id="" style="width:50%"/></td>
+					<td>
+						<label for="" style="width:45%;display:inline-block;float:left">危品联系人联系地址：</label>
+						<input type="text" id="" style="width:50%"/></td>
+				</tr>
+       		</table>
+	</div>
+	</div>
+	<br/>
+	<div class="panel close collapse" minH="80" defH="80">
+		<h1>集装箱信息</h1>
+		<div>
+       		<table style="table-layout:fixed;" width="100%">
+       			<tr height="40">
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">集装箱号：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left;height: 10px">箱型尺寸：</label>
+							<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">20GP</option>
+								<option value="2">20RF</option>
+								<option value="3">40GP</option>
+								<option value="4">40RF</option>
+								<option value="5">45GP</option>
+								<option value="6">45RF</option>
+						</select></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left;height: 10px">箱来源：</label>
+							<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">承运人提供箱</option>
+								<option value="2">船代提供箱</option>
+								<option value="3">港口提供箱</option>
+						</select></td>
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">订舱号：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">封志号：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">封志人：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">封装类型：</label>
+						<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">机械封装</option>
+								<option value="2">人工封装</option>
+						</select></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">拼否：</label>
+						<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">否</option>
+								<option value="2">是</option>
+						</select></td>
+					<td>
+						<button style="width: 70%">增加</button></td>
+					<td>
+						<button style="width: 70%">导入</button></td>
+				</tr>
+       		</table>
+	</div>
+	</div>
+	<br/>
+	<div class="panel" minH="80" defH="80">
+		<h1>托运货物信息（如果是集装箱货物，请先填写集装箱信息）</h1>
+		<div>
+       		<table style="table-layout:fixed;" width="100%">
+       			<tr height="40">
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left;height: 10px">包装类型：</label>
+							<select name="" style="width:55%">
+								<option value="请选择" selected="selected">请选择</option>
+								<option value="1">集装箱</option>
+								<option value="2">纸板箱</option>
+								<option value="3">其他</option>
+						</select></td>
+       				<td>
+						<label for="" style="width:40%;display:inline-block;float:left">货运件数：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">货物毛重：</label>
+						<input class="required" type="text" id="" style="width:35%"/><span style="width:20%">   公斤</span></td>
+					<td>
+						<label for="" style="width:50%;display:inline-block;float:left">联合国危险品编号：</label>
+						<input class="required" type="text" id="" style="width:45%"/></td>
+				</tr>
+				<tr height="40">
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">合同号：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td>
+						<label for="" style="width:40%;display:inline-block;float:left">集装箱号：</label>
+						<input class="required" type="text" id="" style="width:55%"/></td>
+					<td colspan="2">
+						<label for="" style="width:20%;display:inline-block;float:left">货物简要描述：</label>
+						<input class="required" type="text" id="" style="width:77%"/></td>
+				</tr>
+       		</table>
+	</div>
+	</div>
+	<br/>
+	<div class="formBar">
+			<ul>
+				<!--<li><a class="buttonActive" href="javascript:;"><span>保存</span></a></li>-->
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+				<li>
+					<div class="button"><div class="buttonContent"><button type="button" class="close">保存并提交</button></div></div>
+				</li>
+			</ul>
+		</div>
+</div>

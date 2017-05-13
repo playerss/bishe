@@ -1,0 +1,81 @@
+<div class="accountInfo">
+	<p>
+		<span style="font-size: 22px;text-align: center">
+				订单管理--线下交易凭证</span>
+	</p>
+</div>
+
+<div class="pageCentent">
+<div class="frame-container">
+        <div class="tip-txt">
+            <p>我的线下交易订单</p>
+        </div>
+
+        <div class="searchs">
+            <form action="http://hnuser.cnhnb.com/home/supplierVoucher" method="post" name="searchForm" id="searchForm">
+     <!--         <form action="http://127.0.0.1/uc-web/home/supplierVoucher" method="post" name="searchForm" id="searchForm"> -->
+                <span>订单编号：</span>
+                <input id="saleCode" name="saleCode" class="input" value="">
+                <span>成交日期：</span>
+                <input name="startTime" id="startTime" class="input date-start" value="" readonly="readonly" size="10" onfocus="var startTime=$dp.$('lastTime');WdatePicker({onpicked:function(){lastTime.focus();},maxDate:'#F{$dp.$D(\'lastTime\')}'})">
+                <span>到</span>
+                <input name="lastTime" id="lastTime" class="input date-end" value="" readonly="readonly" size="10" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}'})" type="text">
+                <span>订单状态：</span>
+                <select name="auditStatus" id="auditStatus">
+                    <option value="-1">全部</option>
+                    <option value="1">审核中</option>
+                    <option value="2">审核通过</option>
+                    <option value="3">审核不通过</option>
+                </select>
+                
+                  
+                  
+                   
+                  
+		                <script>document.getElementById("auditStatus").options[0].selected=true;</script>
+		          
+                                  
+                <input class="btn" value="搜索" onclick="submitSearchForm()" type="button">
+                <input class="btn" value="重置" onclick="resetBtn()" type="reset">
+                
+               <input name="page.pageNumber" id="pageNumber" value="1" type="hidden">
+	           <input name="recordCount" id="recordCount" value="0" type="hidden">
+	           <input name="ids" id="ids" value="" type="hidden">
+            </form>
+        </div>
+
+        <div class="fun-btn">
+            <a href="javascript:void(0)" class="btn-new">新增</a>
+            <a href="javascript:void(0)" class="btn-green" onclick="expVoucher()">导出</a>
+        </div>
+
+        <div id="lists">
+                <div class="list">
+                    <dl class="list-t">
+                        <dd class="w1">
+                            <input name="chk_all" id="chk_all" type="checkbox">
+                                                       全选
+                        </dd>
+                        <dd class="w2">成交供应</dd>
+                        <dd class="w3">订单号</dd>
+                        <dd class="w4">订单金额（元）</dd>
+                        <dd class="w5">成交数量</dd>
+                        <dd class="w6">成交时间</dd>
+                        <dd class="w5">订单状态</dd>
+                        <dd class="w7">操作</dd>
+                    </dl>
+                    <ul class="list-c">
+                       
+                        
+                            <li class="no-list">暂无交易信息</li>
+                        
+                         
+                    </ul>
+                </div>
+                <div class="myhn_page">
+                     
+                </div>
+        </div>
+
+    </div>
+</div>

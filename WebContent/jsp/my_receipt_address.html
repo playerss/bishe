@@ -1,0 +1,108 @@
+<div class="accountInfo">
+	<p>
+		<span style="font-size: 22px;text-align: center">
+				订单管理--我的收货地址</span>
+	</p>
+</div>
+
+<div class="pageCentent">
+<div class="add-address">
+		        	<h2 id="titles">新增收货地址</h2>
+		        	<ul class="pt10">
+		        		<li class="l1">*</li>
+		        		<li class="l2">所在地区：</li>
+		        		<li class="l3">
+		        			<select id="provinceId" name="province">
+		        				
+		        			<option value="">-选择省-</option><option value="3">河北省</option><option value="4">山西省</option><option value="5">内蒙古自治区</option><option value="6">辽宁省</option><option value="7">吉林省</option><option value="8">黑龙江省</option><option value="10">江苏省</option><option value="11">浙江省</option><option value="12">安徽省</option><option value="13">福建省</option><option value="14">江西省</option><option value="15">山东省</option><option value="16">河南省</option><option value="17">湖北省</option><option value="18">湖南省</option><option value="19">广东省</option><option value="20">广西壮族自治区</option><option value="21">海南省</option><option value="23">四川省</option><option value="24">贵州省</option><option value="25">云南省</option><option value="26">西藏自治区</option><option value="27">陕西省</option><option value="28">甘肃省</option><option value="29">青海省</option><option value="30">宁夏回族自治区</option><option value="31">新疆维吾尔自治区</option><option value="32">台湾省</option><option value="33">香港特别行政区</option><option value="34">澳门特别行政区</option><option value="45081">北京</option><option value="45082">天津</option><option value="45083">上海</option><option value="45084">重庆</option></select>
+		        			<div class="errorWrapper" id="province-error" style="display:none;">
+		        				<label class="error" for="province">请选择所在地区</label>
+		        			</div>
+		        			<select id="cityId" name="city">
+		        				<option value="">-选择市-</option>
+		        			</select>
+		        			<div class="errorWrapper" id="city-error" style="display:none; margin-left:120px;">
+		        				<label class="error" for="city">请选择所在地区</label>
+		        			</div>
+		        			<select id="areaId" name="area">
+		        				<option value="">-选择区-</option>
+		        			</select>
+		        			<div class="errorWrapper" id="area-error" style="display:none; margin-left:220px;">
+		        				<label class="error" for="area">请选择所在地区</label>
+		        			</div>
+		        		</li>
+		        	</ul>
+		        	<ul>
+		        		<li class="l1">*</li>
+		        		<li class="l2">街道地址：</li>
+		        		<li class="l3">
+		        			<textarea id="my-address" name="street" cols="50" rows="2" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息"></textarea>
+		        			<div class="errorWrapper" id="street-error" style="display: none;">
+		        				<label class="error" for="street">请选择所在地区</label>
+		        			</div>
+		        		</li>
+		        	</ul>
+		        	<ul>
+		        		<li class="l1">&nbsp;</li>
+		        		<li class="l2">邮政编码：</li>
+		        		<li class="l3">
+		        			<input name="zipCode" id="zipCode" style="width:175px;" placeholder="不清楚邮政编码，请填写000000" type="text">
+		        			<div class="errorWrapper" id="zipCode-error" style="display: none;">
+		        				<label class="error" for="zipCode">请选择所在地区</label>
+		        			</div>
+		        		</li>
+		        	</ul>
+		        	<ul>
+		        		<li class="l1">*</li>
+		        		<li class="l2">收货人：</li>
+		        		<li class="l3">
+		        			<input name="linkMan" id="linkMan" style="width:175px;" placeholder="长度不超过20个字" type="text">
+		        			<div class="errorWrapper" id="linkMan-error" style="display: none;">
+		        				<label class="error" for="linkMan">请选择所在地区</label>
+		        			</div>
+		        		</li>
+		        	</ul>
+		        	<ul>
+		        		<li class="l1">*</li>
+		        		<li class="l2">电话号码：</li>
+		        		<li class="l3">
+		        			<input name="mobile" id="mobile" style="width:175px;" type="text">
+		        			<div class="errorWrapper" id="mobile-error" style="display: none;">
+		        				<label class="error" for="mobile">请选择所在地区</label>
+		        			</div>
+		        		</li>
+		        	</ul>
+		            <ul>
+		        		<li class="l1">&nbsp;</li>
+		        		<li class="l2">&nbsp;</li>
+		        		<li class="l3">
+		        			<input name="default" id="default" class="default" type="checkbox">设置为默认地址
+		        			<div class="errorWrapper" id="default-error" style="display: none;">
+		        				<label class="error" for="default">请选择所在地区</label>
+		        			</div>
+		        		</li>
+		        	</ul>
+		            <ul class="pt10">
+		        		<li class="l1">&nbsp;</li>
+		        		<li class="l2">&nbsp;</li>
+		        		<li class="l3">
+		        			<input name="addressId" id="addressId" value="" type="hidden">
+		        			<a href="javascript:void(0);" class="but submit" id="saveAddress">保存</a>
+		        		</li>
+		        	</ul>
+		        </div>
+		        <div class="list-address">
+		        	<h2>已保存了<span class="red">0</span>条地址，还能保存 <span class="red">20</span> 条地址</h2>
+		            <ul class="list-title">
+		            	<li class="l1">收货人</li>
+		                <li class="l2">所在地区</li>
+		                <li class="l3">街道地址</li>
+		                <li class="l4">邮编</li>
+		                <li class="l5">电话/手机</li>
+		                <li class="l6">操作</li>
+		            </ul>
+		            
+		            <div class="blank_20"></div>
+		            <div class="blank_20"></div>
+		        </div>
+</div>

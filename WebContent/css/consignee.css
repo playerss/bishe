@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nav{ 
+	margin-bottom:15px;
+}
+.content{
+	width:980px; float:right;
+}
+
+.cyd_page{
+	width:960px;
+}
+
+/*鏍囬鏉�*/
+.titlebar{
+	overflow:hidden;
+	border-left:#f47a11 solid 4px;
+}
+.titlebar .titlebar-name{
+	float:left;
+	display:inline;
+	height:20px;
+	line-height:20px;
+	padding-left:10px;
+	font-size:16px;
+}
+
+/*鏂板*/
+.add-address{
+	padding-left:20px;
+}
+.add-address h2{
+	line-height:30px;
+	font-size:14px;
+	margin-top:10px;
+	font-weight:bold;
+}
+.add-address ul{
+	padding-top:24px;
+	clear:both;
+}
+.add-address ul.pt10 {
+    padding-top: 10px;
+}
+.add-address li{
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.add-address li.l1{
+	color:red;
+	width:15px;
+	text-align:center;
+}
+.add-address li.l2{
+	width:75px;
+	font-size:14px;
+}
+.add-address li.l3{
+	width:800px;
+	line-height: 25px;
+	position: relative;
+}
+.add-address li input{
+	height:23px;
+	border:#ccc solid 1px;
+}
+.add-address li textarea{
+	border:#ccc solid 1px;
+}
+.add-address li input.default{
+	float:left;
+	margin-right:2px;
+}
+.add-address li .submit{
+	display:block;
+	width:100px;
+	height:25px;
+}
+
+/*鍒楄〃*/
+/*鏂板*/
+.list-address{
+	clear:both;
+	padding-left:20px;
+	padding-top:20px;
+}
+.list-address h2{
+	line-height:30px;
+	font-size:14px;
+	margin-top:10px;
+	font-weight:bold;
+}
+.list-address .list-title{
+	border:#e5e5e5 solid 1px;
+	background-color:#f9f9f9;
+	overflow:hidden;
+}
+.list-address .list-record{
+	border:#e5e5e5 solid 1px;
+	border-top:0;
+	overflow:hidden;
+}
+.list-address li{
+	float:left;
+	display:inline;
+	height:30px;
+	overflow:hidden;
+	line-height:30px;
+	text-align:center;
+}
+.list-address li.l1{width:100px;}
+.list-address li.l2{width:200px;}
+.list-address li.l3{width:300px;}
+.list-address li.l4{width:100px;}
+.list-address li.l5{width:150px;}
+.list-address li.l6{width:108px;}
+.list-address li a:hover{
+	color:#f47a11;
+}
+.list-address .list-record li a.modifyAddress{ color:#f47a11;}
+.list-address .list-record li a.delAddress{ color:#f47a11;}
+/*鎻愮ず*/
+.errorWrapper {
+	position:absolute;
+	left:1px; top:-30px;
+	display: none;
+}
+.errorWrapper label {
+	display:block;
+	padding:5px 10px 5px 24px;
+	border:1px solid #ff4200;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background:#fdf3eb url(../../../product/images/input_check_error.gif) no-repeat 6px 50%;
+	font-size:12px;
+	line-height:1.4;
+	color:#ff4200;
+	z-index:999;
+}
+.errorWrapper label:after {
+	content:' ';
+	position:absolute;
+	left:8px;
+	bottom:-8px;
+	width:16px;
+	height:16px;
+	background:url(../../../product/images/error-wrapper-down.png) no-repeat;
+}
+#textarea-error:after {
+	left:-7px;
+	top:7px;
+	bottom:auto;
+	background-image:url(../../../product/images/error-wrapper-left.png);
+}
+
